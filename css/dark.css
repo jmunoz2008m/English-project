@@ -1,0 +1,373 @@
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+/* Cambiamos las variables principales cuando dark-mode está activo */
+body.dark-mode {
+
+    --navy: #f4ecd8;
+    --navy-2: #e0cf9f;
+    --navy-3: #cbbd98;
+    --navy-soft: #aaa17f;
+
+    --cream: #121212;
+    --cream-2: #1c1c1c;
+    --cream-3: #d6c27a;
+
+    --cream-line: rgba(244, 236, 216, 0.16);
+
+    background: #121212;
+    color: #f4ecd8;
+}
+
+
+/* =========================================================
+   SWITCH
+   ========================================================= */
+
+.dark-mode-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.dark-mode-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    inset: 0;
+    background-color: #ccc;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 3px;
+    top: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+/* Switch activado */
+.dark-mode-switch input:checked + .slider {
+    background-color: #d6c27a;
+}
+
+.dark-mode-switch input:checked + .slider::before {
+    transform: translateX(24px);
+}
+
+
+/* =========================================================
+   TRANSICIÓN GENERAL
+   ========================================================= */
+
+body,
+.site-header,
+.section,
+.card,
+.about-card,
+.info-card,
+.timeline-item,
+.hero,
+.about-hero,
+.about-alt,
+.activity-box,
+.site-footer {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* =========================================================
+   ELEMENTOS QUE TIENEN COLORES FIJOS
+   ========================================================= */
+
+/* Header */
+body.dark-mode .site-header {
+    background: #0d0d0d;
+}
+
+/* Navbar */
+body.dark-mode .nav-list {
+    background: #0d0d0d;
+}
+
+/* Hero */
+body.dark-mode .hero {
+    background: #121212;
+}
+
+/* Secciones */
+body.dark-mode .section {
+    background: #121212;
+}
+
+/* Secciones alternas */
+body.dark-mode .section:nth-of-type(even),
+body.dark-mode .about-alt {
+    background: #1c1c1c;
+}
+
+/* Tarjetas */
+body.dark-mode .card,
+body.dark-mode .about-card,
+body.dark-mode .info-card,
+body.dark-mode .timeline-item {
+    background: #1c1c1c;
+}
+
+/* Footer */
+body.dark-mode .site-footer {
+    background: #0d0d0d;
+}
+
+/* Hero boarding pass */
+body.dark-mode .pass {
+    background-color: #16213e !important;
+    color: #f4ecd8;
+}
+
+body.dark-mode .cv-banner {
+    background-color: #080808;
+}
+/* Preview */
+body.dark-mode .preview {
+    background: #1c1c1c;
+}
+
+body.dark-mode .preview iframe {
+    background: #1c1c1c;
+}
+
+body.dark-mode .preview-empty {
+    background: #1c1c1c;
+}
+
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+
+body.dark-mode .btn-primary {
+    background: #f4ecd8;
+    color: #121212;
+    border-color: #f4ecd8;
+}
+
+body.dark-mode .btn-primary:hover {
+    background: #e0cf9f;
+}
+
+body.dark-mode .btn-outline {
+    color: #f4ecd8;
+    border-color: #f4ecd8;
+}
+
+body.dark-mode .btn-outline:hover {
+    background: #f4ecd8;
+    color: #121212;
+}
+
+body.dark-mode .nav-list a {
+    color: #ffffff;
+}
+
+body.dark-mode .nav-list a:hover,
+body.dark-mode .nav-list a:focus-visible,
+body.dark-mode .nav-list a.is-active {
+    color: #f4ecd8;
+    border-bottom-color: #d6c27a;
+}
+
+body.dark-mode .brand {
+    color: #f4ecd8;
+}
+
+body.dark-mode .brand-mark {
+    border-color: #f4ecd8;
+}
+
+/* =========================================================
+   ABOUT ME - CURRICULUM VITAE   DARK-MODE
+   ========================================================= */
+
+body.dark-mode .cv-banner {
+    background: #080808;
+    color: #f4ecd8;
+}
+
+body.dark-mode .cv-banner h2 {
+    color: #ffffff;
+}
+
+body.dark-mode .cv-banner p:not(.section-kicker) {
+    color: #f4ecd8;
+}
+
+body.dark-mode .cv-banner .section-kicker {
+    color: #d6c27a;
+}
+
+/* Footer en modo oscuro */
+
+body.dark-mode .footer-brand {
+    color: #ffffff;
+}
+
+body.dark-mode .footer-tag {
+    color: #f4ecd8;
+}
+
+body.dark-mode .footer-meta {
+    color: #d6c27a;
+}
+
+/* =========================================================
+   BOARDING PASS - MODO OSCURO
+   ========================================================= */
+
+
+
+body.dark-mode .pass .pass-value {
+    color: #ffffff;
+}
+
+body.dark-mode .pass .pass-label {
+    color: #d6c27a;
+}
+
+body.dark-mode .pass-route {
+    color: #ffffff;
+}
+
+body.dark-mode .pass-route span {
+    color: #ffffff;
+}
+
+body.dark-mode .pass-stub .stamp {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* ==========================================
+   DARK MODE - NEOBRUTALIST CONTACT FORM
+   ========================================== */
+
+/* Fondo general de la sección y contenedor */
+.dark-mode .contact-section {
+  background-color: #0b1120;
+}
+
+/* 1. Tarjeta principal del formulario */
+.dark-mode .contact-card-v2 {
+  background-color: #0f172a;
+  border-color: #ffffff;
+  box-shadow: 10px 10px 0px #ffffff;
+}
+
+.dark-mode .contact-card-v2:hover {
+  box-shadow: 13px 13px 0px #ffffff;
+}
+
+/* 2. Textos e información de la columna izquierda */
+.dark-mode .contact-info .section-kicker {
+  color: #38bdf8; /* Azul cielo para destacar */
+}
+
+.dark-mode .contact-info h1 {
+  color: #ffffff;
+}
+
+.dark-mode .contact-info h1 span {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.dark-mode .contact-info .section-desc {
+  color: #94a3b8;
+}
+
+/* Badge de estado (Available for projects) */
+.dark-mode .status-badge {
+  background-color: #0f172a;
+  border-color: #ffffff;
+  color: #ffffff;
+  box-shadow: 3px 3px 0px #ffffff;
+}
+
+/* 3. Tarjetas rápidas laterales (Direct Email & Location) */
+.dark-mode .contact-info div[style*="background: #ffffff"] {
+  background-color: #0f172a !important;
+  border-color: #ffffff !important;
+  box-shadow: 4px 4px 0px #ffffff !important;
+}
+
+.dark-mode .contact-info div[style*="background: #ffffff"] div {
+  color: #ffffff !important;
+}
+
+/* 4. Labels, Inputs y Textarea */
+.dark-mode .contact-field label {
+  color: #ffffff;
+}
+
+.dark-mode .neo-input {
+  background-color: #1e293b;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.dark-mode .neo-input::placeholder {
+  color: #64748b;
+}
+
+.dark-mode .neo-input:focus {
+  background-color: #0f172a;
+  border-color: #38bdf8;
+  box-shadow: 4px 4px 0px #38bdf8;
+}
+
+/* 5. Botón principal de envío */
+.dark-mode .btn-neo-v2 {
+  background-color: #ffffff;
+  color: #0f172a;
+  border-color: #ffffff;
+  box-shadow: 5px 5px 0px #38bdf8; /* Sombra acento azul neón */
+}
+
+.dark-mode .btn-neo-v2:hover {
+  background-color: #f1f5f9;
+  box-shadow: 7px 7px 0px #38bdf8;
+}
+
+.dark-mode .btn-neo-v2:active {
+  box-shadow: 2px 2px 0px #38bdf8;
+}   
+
+/* =========================================================
+   MOBILE NAV
+   ========================================================= */
+
+@media (max-width: 760px) {
+
+    body.dark-mode .nav-list {
+        background: #0d0d0d;
+        border-bottom-color: #d6c27a;
+    }
+
+}
