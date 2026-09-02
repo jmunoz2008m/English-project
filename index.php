@@ -300,32 +300,6 @@ function get_project($projects, $section)
 >
 
 <li>
-    <label class="dark-mode-switch">
-        <input type="checkbox" id="darkModeToggle">
-        <span class="slider"></span>
-    </label>
-</li>
-
-<li>
-    <button
-        type="button"
-        data-language-toggle
-        style="
-            background: transparent;
-            border: 1px solid currentColor;
-            border-radius: 6px;
-            padding: 6px 10px;
-            cursor: pointer;
-            font: inherit;
-            color: inherit;
-        "
-        aria-label="Change language to Spanish"
-    >
-        ES
-    </button>
-</li>
-
-<li>
     <a href="#description" data-i18n="nav.description">
         Description
     </a>
@@ -378,6 +352,27 @@ function get_project($projects, $section)
 </nav>
 
 </header>
+
+<div class="floating-controls">
+
+<label class="dark-mode-switch" title="Toggle dark mode">
+
+<input type="checkbox" id="darkModeToggle">
+
+<span class="slider"></span>
+
+</label>
+
+<button
+    type="button"
+    data-language-toggle
+    class="lang-toggle-btn"
+    aria-label="Change language to Spanish"
+>
+    ES
+</button>
+
+</div>
 
 
 <main id="main">

@@ -198,6 +198,44 @@ section {
 }
 
 /* =========================================================
+   FLOATING CONTROLS (dark mode switch + language toggle)
+   Lives OUTSIDE .nav-wrap, fixed below the header, so it
+   stays visible on scroll without crowding the nav links.
+   ========================================================= */
+.floating-controls {
+  position: fixed;
+  top: calc(var(--nav-h) + 14px);
+  right: 1.5rem;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--cream);
+  border: 1.5px solid var(--navy);
+  border-radius: 999px;
+  padding: 8px 14px;
+  box-shadow: 4px 4px 0px var(--navy-soft);
+}
+
+.lang-toggle-btn {
+  background: transparent;
+  border: 1px solid var(--navy);
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font: inherit;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  color: var(--navy);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-toggle-btn:hover {
+  background: var(--navy);
+  color: var(--cream);
+}
+
+/* =========================================================
    HERO — Boarding pass
    ========================================================= */
 .hero {
@@ -714,6 +752,13 @@ section {
   .footer-meta {
     text-align: left;
   }
+
+  .floating-controls {
+    top: calc(var(--nav-h) + 10px);
+    right: 0.9rem;
+    padding: 6px 10px;
+    gap: 8px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -726,6 +771,10 @@ section {
   .preview video {
     height: 280px;
     max-height: 280px;
+  }
+
+  .floating-controls {
+    right: 0.6rem;
   }
 }
 

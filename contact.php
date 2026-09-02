@@ -120,44 +120,6 @@
 
 <li>
 
-<label class="dark-mode-switch">
-
-<input
-    type="checkbox"
-    id="darkModeToggle"
->
-
-<span class="slider"></span>
-
-</label>
-
-</li>
-
-
-<li>
-
-<button
-    type="button"
-    data-language-toggle
-    style="
-        background: transparent;
-        border: 1px solid currentColor;
-        border-radius: 6px;
-        padding: 6px 10px;
-        cursor: pointer;
-        font: inherit;
-        color: inherit;
-    "
-    aria-label="Change language to Spanish"
->
-    ES
-</button>
-
-</li>
-
-
-<li>
-
 <a
     href="index.php#description"
     data-i18n="nav.description"
@@ -252,14 +214,32 @@
 </li>
 
 
-
-
-
 </ul>
 
 </nav>
 
 </header>
+
+<div class="floating-controls">
+
+<label class="dark-mode-switch" title="Toggle dark mode">
+
+<input type="checkbox" id="darkModeToggle">
+
+<span class="slider"></span>
+
+</label>
+
+<button
+    type="button"
+    data-language-toggle
+    class="lang-toggle-btn"
+    aria-label="Change language to Spanish"
+>
+    ES
+</button>
+
+</div>
 
 
 <!-- =====================================================

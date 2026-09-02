@@ -85,7 +85,8 @@ body,
 .about-hero,
 .about-alt,
 .activity-box,
-.site-footer {
+.site-footer,
+.floating-controls {
     transition:
         background-color 0.3s ease,
         color 0.3s ease,
@@ -200,6 +201,26 @@ body.dark-mode .brand {
 
 body.dark-mode .brand-mark {
     border-color: #f4ecd8;
+}
+
+/* =========================================================
+   FLOATING CONTROLS — DARK MODE
+   ========================================================= */
+
+body.dark-mode .floating-controls {
+    background: #1c1c1c;
+    border-color: #f4ecd8;
+    box-shadow: 4px 4px 0px #d6c27a;
+}
+
+body.dark-mode .lang-toggle-btn {
+    border-color: #f4ecd8;
+    color: #f4ecd8;
+}
+
+body.dark-mode .lang-toggle-btn:hover {
+    background: #f4ecd8;
+    color: #121212;
 }
 
 /* =========================================================
@@ -371,3 +392,4 @@ body.dark-mode .pass-stub .stamp {
     }
 
 }
+ 
