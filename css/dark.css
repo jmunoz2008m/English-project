@@ -289,96 +289,107 @@ body.dark-mode .pass-stub .stamp {
    DARK MODE - NEOBRUTALIST CONTACT FORM
    ========================================== */
 
-/* Fondo general de la sección y contenedor */
-.dark-mode .contact-section {
-  background-color: #0b1120;
+/* Fondo principal de la sección */
+body.dark-mode .contact-section {
+  background-color: #121212 !important;
 }
 
-/* 1. Tarjeta principal del formulario */
-.dark-mode .contact-card-v2 {
-  background-color: #0f172a;
-  border-color: #ffffff;
-  box-shadow: 10px 10px 0px #ffffff;
+/* 1. Kicker, Título principal y descripción */
+body.dark-mode .contact-info .section-kicker {
+  color: #38bdf8 !important; /* Azul neón claro e iluminado */
 }
 
-.dark-mode .contact-card-v2:hover {
-  box-shadow: 13px 13px 0px #ffffff;
+body.dark-mode .contact-info h1 {
+  color: #ffffff !important;
 }
 
-/* 2. Textos e información de la columna izquierda */
-.dark-mode .contact-info .section-kicker {
-  color: #38bdf8; /* Azul cielo para destacar */
+body.dark-mode .contact-info h1 span {
+  background-color: #38bdf8 !important;
+  color: #0f172a !important;
 }
 
-.dark-mode .contact-info h1 {
-  color: #ffffff;
+body.dark-mode .contact-info .section-desc {
+  color: #cbd5e1 !important; /* Gris claro de alta legibilidad */
 }
 
-.dark-mode .contact-info h1 span {
-  background-color: #ffffff;
-  color: #0f172a;
+/* 2. Badge de disponibilidad */
+body.dark-mode .status-badge {
+  background-color: #0f172a !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+  box-shadow: 3px 3px 0px #ffffff !important;
 }
 
-.dark-mode .contact-info .section-desc {
-  color: #94a3b8;
-}
-
-/* Badge de estado (Available for projects) */
-.dark-mode .status-badge {
-  background-color: #0f172a;
-  border-color: #ffffff;
-  color: #ffffff;
-  box-shadow: 3px 3px 0px #ffffff;
-}
-
-/* 3. Tarjetas rápidas laterales (Direct Email & Location) */
-.dark-mode .contact-info div[style*="background: #ffffff"] {
+/* 3. Tarjetas rápidas (Direct Email & Location) */
+body.dark-mode .contact-info div[style*="background: #ffffff"],
+body.dark-mode .contact-info div[style*="background:#ffffff"] {
   background-color: #0f172a !important;
   border-color: #ffffff !important;
   box-shadow: 4px 4px 0px #ffffff !important;
 }
 
-.dark-mode .contact-info div[style*="background: #ffffff"] div {
+/* Textos dentro de las tarjetas rápidas */
+body.dark-mode .contact-info div[style*="background: #ffffff"] div,
+body.dark-mode .contact-info div[style*="background:#ffffff"] div {
   color: #ffffff !important;
 }
 
-/* 4. Labels, Inputs y Textarea */
-.dark-mode .contact-field label {
-  color: #ffffff;
+/* Subtítulos pequeños de las tarjetas (Direct Email / Location) */
+body.dark-mode .contact-info div[data-i18n="contact.direct"],
+body.dark-mode .contact-info div[data-i18n="contact.location"] {
+  color: #94a3b8 !important;
 }
 
-.dark-mode .neo-input {
-  background-color: #1e293b;
-  border-color: #ffffff;
-  color: #ffffff;
+/* 4. Tarjeta contenedora del formulario */
+body.dark-mode .contact-card-v2 {
+  background-color: #0f172a !important;
+  border-color: #ffffff !important;
+  box-shadow: 10px 10px 0px #ffffff !important;
 }
 
-.dark-mode .neo-input::placeholder {
-  color: #64748b;
+body.dark-mode .contact-card-v2:hover {
+  box-shadow: 13px 13px 0px #ffffff !important;
 }
 
-.dark-mode .neo-input:focus {
-  background-color: #0f172a;
-  border-color: #38bdf8;
-  box-shadow: 4px 4px 0px #38bdf8;
+/* Labels de los campos */
+body.dark-mode .contact-field label {
+  color: #f1f5f9 !important;
 }
 
-/* 5. Botón principal de envío */
-.dark-mode .btn-neo-v2 {
-  background-color: #ffffff;
-  color: #0f172a;
-  border-color: #ffffff;
-  box-shadow: 5px 5px 0px #38bdf8; /* Sombra acento azul neón */
+/* Inputs y Textarea */
+body.dark-mode .neo-input {
+  background-color: #1e293b !important;
+  border-color: #ffffff !important;
+  color: #ffffff !important;
 }
 
-.dark-mode .btn-neo-v2:hover {
-  background-color: #f1f5f9;
-  box-shadow: 7px 7px 0px #38bdf8;
+body.dark-mode .neo-input::placeholder {
+  color: #94a3b8 !important;
 }
 
-.dark-mode .btn-neo-v2:active {
-  box-shadow: 2px 2px 0px #38bdf8;
-}   
+body.dark-mode .neo-input:focus {
+  background-color: #0f172a !important;
+  border-color: #38bdf8 !important;
+  box-shadow: 4px 4px 0px #38bdf8 !important;
+}
+
+/* 5. Botón de envío */
+body.dark-mode .btn-neo-v2 {
+  background-color: #38bdf8 !important;
+  color: #0f172a !important;
+  border-color: #38bdf8 !important;
+  box-shadow: 5px 5px 0px #ffffff !important;
+}
+
+body.dark-mode .btn-neo-v2:hover {
+  background-color: #7dd3fc !important;
+  border-color: #7dd3fc !important;
+  box-shadow: 7px 7px 0px #ffffff !important;
+}
+
+body.dark-mode .btn-neo-v2:active {
+  box-shadow: 2px 2px 0px #ffffff !important;
+}  
 
 /* =========================================================
    MOBILE NAV
