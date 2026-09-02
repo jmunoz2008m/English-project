@@ -54,6 +54,11 @@ $photo_exists = file_exists(__DIR__ . '/' . $photo_path);
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/dark.css">
 
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+
 </head>
 
 <body>
@@ -346,6 +351,45 @@ My academic journey has helped me develop practical skills in backend database d
 Alongside my studies and work experience, music has also been an important part of my personal development. I participated in an instrumental band as a guitarist from 2020 to 2024.
 
 </p>
+
+<div class="social-links">
+
+    
+
+    <div class="social-links-list">
+
+        <a
+            href="https://github.com/jmunoz2008m"
+            class="social-link"
+            target="blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my GitHub profile"
+            data-i18n-aria-label="about.social.github.aria"
+        >
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            
+        </a>
+        
+        
+
+
+
+
+        <a
+            href="https://www.instagram.com/ivanchoo_007/"
+            class="social-link"
+            target="blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my Instagram profile"
+            data-i18n-aria-label="about.social.instagram.aria"
+        >
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            
+        </a>
+
+    </div>
+
+</div>
 
 
 </article>
